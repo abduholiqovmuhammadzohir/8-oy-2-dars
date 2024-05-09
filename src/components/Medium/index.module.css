@@ -55,7 +55,7 @@
     margin-bottom: 16px;
 }
 
-.inputs{
+.inputs {
     margin-bottom: 16px;
 }
 
@@ -113,7 +113,7 @@
     margin-right: 8px;
 }
 
-.footer{
+.footer {
     background-color: #F8F8F8;
     border-top: 1px solid rgba(226, 226, 234, 1);
     border-left: 1px solid rgba(226, 226, 234, 1);
@@ -122,6 +122,33 @@
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+}
+
+.shablon {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.shablon label {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(68, 68, 79, 1);
+}
+
+.shablon select{
+    width: 762px;
+    padding: 14px 16px;
+    border: 1px solid #edebef;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.shablon input{
+    width: 762px;
+    padding: 14px 16px;
+    border: 1px solid #edebef;
+    border-radius: 8px;
+    margin-top: 10px;
 }

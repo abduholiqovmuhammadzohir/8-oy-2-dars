@@ -58,6 +58,18 @@ function Medium() {
             <div className={styles.footer}>
                 <div className={styles.text}>
                     <h1>Habarning ko’rinishi</h1>
+                    <div className={styles.shablon}>
+                        <label htmlFor="Shablon">Shablon</label><br />
+                        <select>
+                            <option value="1">Shablon</option>
+                            <option value="2">Shablon</option>
+                            <option value="3">Shablon</option>
+                        </select>
+                    </div>
+                    <div className={styles.shablon}>
+                        <label htmlFor="Shablon">Link</label><br />
+                        <input type="text" placeholder='Link'/>
+                    </div>
                 </div>
                 <div className={styles.img}>
                     <img src={phone} />
