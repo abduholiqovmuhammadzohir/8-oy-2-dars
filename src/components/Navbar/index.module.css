@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    margin:0 auto;
+    margin-top: 20px;
+}
+
+.navs {
+    display: flex;
+    align-items: center;
+    margin-right: 36px;
+    cursor: pointer;
+}
+
+.navs p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0.10000000149011612px;
+    color: rgba(146, 146, 157, 1);
+    transition: all 0.5s;
+}
+
+.navs p:hover{
+    color: rgba(0, 98, 255, 1);
+}
+
+.navs img {
+    margin-right: 8px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.select img {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.select .sel {
+    margin-top: -10px;
+}
