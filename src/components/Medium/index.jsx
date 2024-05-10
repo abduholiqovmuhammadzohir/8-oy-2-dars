@@ -34,14 +34,25 @@ function Medium() {
             projectLink.current.focus();
             alert("Link kiriting")
         }
-        if (projectName.current.value.length < 4 || startTime.current.value.length < 4 ) {
+        if (projectName.current.value.length < 4 || startTime.current.value.length < 4) {
             alert("Malumot 3 ta belgidan ko'p bo'lishi kerak")
         }
-        if (projectDescription.current.value.length < 8 || projectLink.current.value.length < 8 ) {
+        if (projectDescription.current.value.length < 8 || projectLink.current.value.length < 8) {
             alert("Malumot 8 ta belgidan ko'p bo'lishi kerak")
         }
     };
 
+
+    const handleChangeLanguage = (language) => {
+        if (language === 'O’zbekcha') {
+            projectDescription.current.placeholder = 'Habar matni...';
+        } else if (language === 'Русский') {
+            projectDescription.current.placeholder = 'Текст сообщения...';
+        } else if (language === 'English') {
+            projectDescription.current.placeholder = 'Message text...';
+        }
+    };
+    
     return (
 
 
@@ -110,7 +121,7 @@ function Medium() {
                         </select>
                     </div>
                     <div className={styles.shablon}>
-                        <label  htmlFor="Shablon">Link</label><br />
+                        <label htmlFor="Shablon">Link</label><br />
                         <input ref={projectLink} type="text" placeholder='Link' />
                     </div>
                     <div className={styles.habar}>
@@ -121,9 +132,9 @@ function Medium() {
                         </div>
                     </div>
                     <div className={styles.button}>
-                        <button>O’zbekcha</button>
-                        <button>Русский</button>
-                        <button>English</button>
+                        <button onClick={() => handleChangeLanguage('O’zbekcha')}>O’zbekcha</button>
+                        <button onClick={() => handleChangeLanguage('Русский')}>Русский</button>
+                        <button onClick={() => handleChangeLanguage('English')}>English</button>
                     </div>
                     <div className={styles.area}>
                         <textarea ref={projectDescription} cols="30" rows="10" placeholder='Habar matni...'></textarea>
