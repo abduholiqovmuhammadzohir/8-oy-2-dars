@@ -7,8 +7,116 @@ import time from "../../assets/time.png"
 import phone from "../../assets/phone.png"
 import add from "../../assets/add.png"
 import { useRef } from 'react';
+import Slider from '@mui/material/Slider';
 
 function Medium() {
+
+
+
+    const marks = [
+        {
+            value: 1,
+            label: '13:00',
+        },
+        {
+            value: 5,
+            label: '14:00',
+        },
+        {
+            value: 9,
+            label: '15:00',
+        },
+        {
+            value: 13,
+            label: '16:00',
+        },
+
+        {
+            value: 17,
+            label: '17:00',
+        },
+        {
+            value: 21,
+            label: '18:00',
+        },
+        {
+            value: 25,
+            label: '19:00',
+        },
+        {
+            value: 30,
+            label: '20:00',
+        },
+        {
+            value: 34,
+            label: '21:00',
+        },
+        {
+            value: 39,
+            label: '22:00',
+        },
+        {
+            value: 43,
+            label: '23:00',
+        },
+        {
+            value: 47,
+            label: '00:00',
+        },
+        {
+            value: 51,
+            label: '01:00',
+        },
+        {
+            value: 55,
+            label: '02:00',
+        },
+        {
+            value: 60,
+            label: '03:00',
+        },
+        {
+            value: 64,
+            label: '04:00',
+        },
+        {
+            value: 68,
+            label: '05:00',
+        },
+        {
+            value: 72,
+            label: '06:00',
+        },
+        {
+            value: 76,
+            label: '07:00',
+        },
+        {
+            value: 80,
+            label: '08:00',
+        },
+        {
+            value: 85,
+            label: '09:00',
+        },
+        {
+            value: 89,
+            label: '10:00',
+        },
+        {
+            value: 94,
+            label: '11:00',
+        },
+        {
+            value: 98,
+            label: '12:00',
+        },
+    ];
+
+    function valuetext(value) {
+        return `${value}°C`;
+    }
+
 
     const projectName = useRef('');
     const projectLink = useRef('');
@@ -52,7 +160,7 @@ function Medium() {
             projectDescription.current.placeholder = 'Message text...';
         }
     };
-    
+
     return (
 
 
@@ -107,7 +215,16 @@ function Medium() {
                     <img src={check} alt="" />
                     <span>Habar yuborilmaydigan vaqt</span>
                 </div>
-                <img src={time} alt="" />
+
+                <div className={styles.slider}>
+                    <Slider
+                        track="inverted"
+                        aria-labelledby="track-inverted-range-slider"
+                        getAriaValueText={valuetext}
+                        defaultValue={[20, 37]}
+                        marks={marks}
+                    />
+                </div>
             </div>
             <div className={styles.footer}>
                 <div className={styles.text}>
