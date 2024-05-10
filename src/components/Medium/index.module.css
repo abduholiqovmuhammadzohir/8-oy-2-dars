@@ -138,17 +138,79 @@
     color: rgba(68, 68, 79, 1);
 }
 
-.shablon select{
+.shablon select {
     width: 762px;
     padding: 14px 16px;
     border: 1px solid #edebef;
     border-radius: 8px;
     margin-top: 10px;
 }
-.shablon input{
+
+.shablon input {
     width: 762px;
     padding: 14px 16px;
     border: 1px solid #edebef;
     border-radius: 8px;
     margin-top: 10px;
+}
+
+.habar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.habar h2 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+
+}
+
+.add {
+    display: flex;
+    align-items: center;
+}
+
+.add h3 {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(0, 98, 255, 1);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button button {
+    border: none;
+    width: 255px;
+    padding: 12px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: var(--Grey, rgba(146, 146, 157, 1));
+    transition: all 0.5s;
+}
+
+.button button:hover {
+    cursor: pointer;
+    color: rgba(0, 98, 255, 1);
+    background-color: #F8F8F8;
+}
+
+.area textarea{
+    resize: none;
+    width: 762px;
+    height: 200px;
+    padding: 24px;
+    border: 1px solid rgba(235, 234, 237, 1);
 }
